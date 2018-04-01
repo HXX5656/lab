@@ -1,0 +1,59 @@
+html,body,div,span,h1,h2,h3,h4,h5,h6,p {
+    margin:0;
+    padding: 0;
+    border:0;
+    font-size:100%;
+    vertical-align: baseline;
+}
+header,footer {background-color:#1A237E;}
+header{margin-bottom: 0.5em;}
+footer{margin-top: 0.5em;}
+html{background-color:#C5CAE9;font-family: sans-serif,serif;color:white;}
+body{margin-left: 5%;margin-right: 5%;min-width: 600px;}
+#sear{padding-top: 1em;padding-bottom: 1em;padding-left:1em;}
+h1{font-size: 1.5em;}
+#sear>div{font-style:italic;font-family: Times New Roman,serif;}
+nav{background-color:#3F51B5;}
+#des,#rp,#rev{color:#00B0FF;padding: 0.3em;}
+nav>div{padding-top: 0.3em;padding-bottom: 0.3em;}
+nav>div{padding-left: 0.7em;}
+  main {
+      border-style: solid;
+      border-top-width: 0.5em;
+      border-bottom-width: 0.5em;
+      border-left-width:0.5em ;
+      border-right-width: 0.5em;
+      border-color: white;
+      background-color: white;
+}
+  h2{background-color: #7986CB;text-transform: uppercase;padding-left: 1em;padding-top: 1em;padding-bottom: 1em;
+
+  }
+  figure{margin: 0;}
+  figure>img{width: 100%;height:100%;}
+  section{
+      border-style: solid;
+      outline: #C5CAE9;
+      border-color:#C5CAE9 ;
+      margin-bottom: 0.5em;
+  }
+  #s1,#s2{margin-bottom: 0.5em;}
+  #fig1,#fig2{padding-left: 1em;padding-top: 0.5em;padding-right: 1em;}
+  #fig1{padding-bottom: 0.5em;font-style: italic;font-family: Times New Roman,serif;color:#7990A3;background-color: #C5CAE9;}
+  #fig2{background-color: white;color:black;font-weight: bold;font-family: Times New Roman,serif;text-align: right;}
+  #fig2>a{font-weight: bold;color:#00B0FF;}
+  #fig2>#images{padding-top: 1em;padding-bottom: 0.5em;background-color: white;}
+  img{vertical-align:middle;}
+  #s3>div,#s3>p{padding-left: 1em;}
+  #s3>p{font-style: italic;color:#F5A2C1;font-family: Times New Roman,serif;}
+  #s3>p>span{color:#C5CAE9;font-family: Times New Roman,serif;}
+  #s3>p+div{color: black;font-family: Times New Roman,serif;font-weight: bold;}
+  #s3>p{padding-top: 0.5em;padding-bottom: 0.5em;}
+  #s3>div{padding-bottom: 0.5em;}
+  hr{margin: 0;margin-left: 1em;margin-right: 1em;}
+  #hrend{margin-bottom: 1em;}
+  footer>p{padding-top:1.3em;padding-left: 1em;padding-bottom: 0.6em;}
+  footer>p>a{color: #00B0FF;}
+  footer>div{font-style: italic;padding-bottom: 1.3em;padding-left: 1em;}
+  #des:hover,#rp:hover,#rev:hover{color: white;background-color: #F50057;}
+  #p{text-align: justify;}
