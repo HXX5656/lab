@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+</head>
+<body>
+<header class="container-fluid row">
+    <div id="sear" class="col-sm-5 container text-center">
+        <h1>Share Your Travels</h1>
+        <div class="font-italic container">Let us know where you've been</div>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-white col-sm-7 container-fluid">
+        <ul class="navbar-nav row container-fluid">
+            <li class="nav-item">
+                <a class="nav-link text-muted" href="gallery.html">Gallery</a></li>
+            <li class="nav-item">
+                <a class="nav-link text-muted" href="#">Feeling Lucky</a>
+            <li class="nav-item">
+                <a class="nav-link text-muted" href="#">User</a>
+        </ul>
+    </nav>
+</header>
+<main class="container-fluid">
+    <section class="">
+        <form action="http://www.randyconnolly.com/tests/process.php" method="post" class="container border col-sm-12">
+            <fieldset class="container-fluid">
+                <br>
+                <h2 class="">Photo Details</h2>
+                <div class="row">
+                            <div class="form-group col-sm-12">
+                            <label for="title">Title</label><br>
+                            <input type="text" id="title" name="title" value="Give your photo a descriptive name" class="form-control">
+                            </div>
+                </div>
+
+                <div class="row"><div class="col-sm-12 form-group">
+                            <label for="description">Description</label><br>
+                            <textarea id="description"  rows="4" cols="100" class="form-control">Adding a rich description will help with search results</textarea>
+                            </div>
+                </div>
+                <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <label for="continent" class="">Continent</label>
+                            <select id="continent"  class="form-control bg-light">
+                                <option>Choose continent</option>
+                                <option>亚洲：Asia</option>
+                                <option>欧洲：Europe</option>
+                                <option>非洲：Africa</option>
+                                <option>拉丁美洲：Latin America</option>
+                                <option>北美洲：North America</option>
+                                <option>南美洲：South America</option>
+                                <option>大洋洲：Oceania</option>
+                                <option>南极洲：Antarctica</option>
+                            </select>
+                        </div>
+                </div>
+                <div class="row">
+                            <div class="form-group col-sm-12">
+                            <label for="country">Coundivy</label><br>
+                            <select id="country" class="form-control bg-light">
+                                <option>Choose coundivy</option>
+                                <option>CHINA</option>
+                                <option>USA</option>
+                                <option>the United Kingdom</option>
+                                <option>Japan</option>
+                                <option>Italy</option>
+                                <option>France</option>
+                                <option>Spain</option>
+                                <option>Portuga</option>
+                            </select>
+                            </div>
+                </div>
+                <div class="row">
+                            <div class="form-group col-sm-12">
+                            <label for="city">City</label><br>
+                            <input type="text" id="city" name="city" class="form-control"><br></div>
+                </div>
+
+                <div class="row">
+                            <div class="form-group col-sm-12">
+                            <div>Copyright?<br>
+                            <input type="radio"  name="copyright" class="radio" value="All rights reserved">All rights reserved<br>
+                            <input type="radio" name="copyright" class="radio" value="Creative Comments" checked="checked">Creative Comments<br>
+                            </div>
+                            </div>
+                </div>
+                <div class="row">
+                            <div class="form-group col-sm-12">
+                            <div>Creative Common Types<br>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                    <input type="checkbox" name="checkbox1" value="adivivibution" class="form-check-input">Attribution</label></div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="checkbox1" value="adivivibution" class="form-check-input">Noncommercial</label></div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" name="checkbox1" value="adivivibution" class="form-check-input">No Derivative Works</label></div>
+                            </div>
+                </div>
+                </div>
+                <div class="row">
+                        <div class="form-group col-sm-12">
+                            <div>
+                            <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" name="checkbox1" value="addd" class="form-check-input"> I accept the software license</label></div>
+                            </div></div>
+                </div>
+                <div class="row">
+                        <div class="col-sm-3 form-group">
+                            <label class="container-fluid">Rate this photo:</label><br>
+                            <input type="number" min="0" max="1" class="form-control">
+
+                        </div>
+                        <div class="col-sm-1 form-group"></div>
+                        <div class="col-sm-8 form-group">
+                            <label class="container-fluid">Color Collection:</label><br>
+                                <input type="text" class="form-control">
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-sm-7 form-group">
+                            <label class="">Date Taken:</label><br>
+                                <input type="date" class="col-sm-12 form-control">
+                           </div>
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-4">
+                            <label  class="">Time:</label><br>
+                                <input type="time" class="form-control">
+                        </div>
+                </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <br>
+                            <div class="rectangle">
+                            <input type="submit" value="提交" class="rounded">
+                            <input type="reset" value="Clear Form" class="rounded"></div>
+                        </div>
+                    </div>
+
+            </fieldset>
+        </form>
+
+    </section>
+</main>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- popper.min.js 用于弹窗、提示、下拉菜单 -->
+<script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+
+<!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+</body>
+</html>
