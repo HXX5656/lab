@@ -82,13 +82,15 @@ function createTable() {
 }
 function fresh(givens) {
     $(".attrs1").empty();
+    var intt=new Array();
     for(var a=0;a<givens;a++){
-        int[a]=document.createElement("input");
-        int[a].type="text";
-        int[a].value="";
-        int[a].placeholder=table.inputs[a];
-        $(".attrs1").append(int[a]);
+        intt[a]=document.createElement("input");
+        intt[a].type="text";
+        intt[a].value="";
+        intt[a].placeholder=table.inputs[a];
+        $(".attrs1").append(intt[a]);
     }
+    int=intt;
 }
 function addRow() {
     document.getElementById("input").style.display="none";
@@ -132,8 +134,13 @@ function deleteRow() {
                 for(let xx=0;xx<table.trs.length;xx++){
                     let scs=0;
                     for(let xs=0;xs<int.length;xs++) {
-                        if(int[xs].value===table.trs[xx][xs]||int[xs].value===""){
-                            scs++;
+                        if(table.trs[xx]===undefined){
+
+                        }
+                        else {
+                            if (int[xs].value === table.trs[xx][xs] || int[xs].value === "") {
+                                scs++;
+                            }
                         }
                     }
                     if(scs===int.length){
