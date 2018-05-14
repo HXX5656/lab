@@ -27,7 +27,12 @@ function selectOne() {
 }
 sel2.onchange=function cha() {
     var n=sel2.selectedIndex;
-    table=options(n-1);
+    if(n==0){
+        table=null;
+    }
+    else {
+        table=options[n-1];
+    }
     showtable();
 }
 function createTable() {
@@ -47,15 +52,30 @@ function createTable() {
                 $(".attrs").append(inne[a]);
             }
         $(".attrs").css("display","block");
-            document.getElementById("commit").style.display="block";
             inn=inne;
         }
-    var commit=document.getElementById("commit");
-    commit.onclick= function () {
-            if(sel1.selectedIndex==1) {
-            options[options.length]=new Table();
+        document.getElementById("name").onblur=function ()
+        {if($("#name").val()=="") {
+            document.getElementById("commit").style.display="none";
         }
+        else {
+        var commit=document.getElementById("commit");
+            document.getElementById("commit").style.display="block";
+            commit.onclick= function () {
+                if(sel1.selectedIndex==1) {
+                    let sm1=0;
+                    for(let sm=0;sm<inn.length;sm++) {
+                        if(inn[sm].value===""){
+                            sm1++;
+                        }
+                    }
+                    if(sm1!=inn.length){
+                        options[options.length]=new Table();
+                    }
+                }
+            }
         }
+    }
 
 
 }
@@ -64,6 +84,7 @@ function fresh(givens) {
     for(var a=0;a<givens;a++){
         int[a]=document.createElement("input");
         int[a].type="text";
+        int[a].value="";
         int[a].placeholder=table.inputs[a];
         $(".attrs1").append(int[a]);
     }
@@ -78,17 +99,23 @@ function addRow() {
     $(".attrs1").css("display",'block');
     commit1.onclick= function () {
             if(sel1.selectedIndex==2) {
-                table.trs.length++;
-                table.trs[table.trs.length - 1] = new Array();
-                let tr = table.trs[table.trs.length - 1];
-                tr.length = table.inputs.length;
-                for (let q = 0; q < table.inputs.length; q++) {
-                    tr[q] = int[q].value;
+                let xm1=0;
+                for(let xm=0;xm<int.length;xm++) {
+                    if(int[xm].value===""){
+                        xm1++;
+                    }
                 }
-                showtable();
-
-
+           if(xm1!=int.length){
+           table.trs.length++;
+           table.trs[table.trs.length - 1] = new Array();
+           let tr = table.trs[table.trs.length - 1];
+           tr.length = table.inputs.length;
+           for (let q = 0; q < table.inputs.length; q++) {
+             tr[q] = int[q].value;
             }
+    showtable();
+}
+                }
         }
 
 }
