@@ -17,6 +17,7 @@ function s1() {
         document.getElementById("commit").style.display="none";
         document.getElementById("input").style.display="none";
         $("#commit1").css("display",'none');
+        $(".attrs1,.attrs").css("display","none");
     }
 }
 s1();
@@ -24,11 +25,13 @@ function selectOne() {
     document.getElementById("commit").style.display="none";
     document.getElementById("input").style.display="none";
     $("#commit1").css("display",'none');
+    $(".attrs1,.attrs").css("display","none");
 }
 sel2.onchange=function cha() {
     var n=sel2.selectedIndex;
     if(n==0){
         table=null;
+
     }
     else {
         table=options[n-1];
@@ -129,6 +132,7 @@ function deleteRow() {
     $("#commit").css("display",'none');
     $("#commit1").css("display",'block');
     fresh(table.inputs.length);
+    $(".attrs1").css("display",'block');
     commit1.onclick= function () {
             if(sel1.selectedIndex==3){
                 for(let xx=0;xx<table.trs.length;xx++){
