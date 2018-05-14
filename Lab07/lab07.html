@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tables</title>
+    <link href="lab07.css" rel="stylesheet" media="all">
+</head>
+<body>
+<form>
+    <label for="select1"></label>
+    <select id="select1">
+        <option value="SELECT ONE">SELECT ONE</option>
+        <option value="CREATE TABLE">CREATE TABLE</option>
+        <option value="ADD ROW">ADD ROW</option>
+        <option value="DELECT ROW">DELECT ROW</option>
+        <option value="DELETE TABLE">DELETE TABLE</option>
+    </select>
+    <div id="input">
+        <input type="text" placeholder="Table Name" id="name">
+        <input type="number" placeholder="Columns Numbers" id="number">
+    </div>
+    <div class="attrs"></div>
+    <div class="attrs1"></div>
+    <div class="bts">
+    <button type="button" id="commit">commit</button>
+    <button type="button" id="commit1">commit</button>
+    </div>
+    <label for="select2"></label>
+    <select id="select2">
+        <option value="SELECT(default: last created)">SELECT(default: last created)</option>
+    </select>
+    <table id="show" class="">
+        <thead></thead>
+        <tbody></tbody>
+    </table>
+</form>
+<script src="jquery-1.8.3.min.js"rel="script"></script>
+<script src="lab07.js" rel="script"></script>
+</body>
+</html>

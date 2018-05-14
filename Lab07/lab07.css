@@ -1,0 +1,7 @@
+#input,#commit{display: none;}
+form,div,.bts{text-align: center;}
+select,button{width: 300px;}
+table{border: 0;}
+table thead{background-color: grey;color: whitesmoke;}
+td th{padding: 0 0.5em;}
+button,table{margin: auto;}
