@@ -4,7 +4,7 @@ var inn=new Array();
 var int=new Array();
 var options=new Array();
 var table;
-sel1.onchange=function changes(){
+function changes(){
     var num=sel1.selectedIndex;
     if(num==0){selectOne();}
     else if(num==1){createTable();}
@@ -33,6 +33,7 @@ sel2.onchange=function cha() {
     else {
         table=options[n-1];
     }
+    changes();
     showtable();
 }
 function createTable() {
