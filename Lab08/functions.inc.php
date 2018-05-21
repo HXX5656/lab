@@ -21,7 +21,7 @@ function outputPostRow($number)  {
         $whites=$whites.$white;
     };
     $srcStr=' src=images/'.${'thumb'.$number};
-    $made1='<div class="row"><div class="col-md-4"><a href="post.php?id= '.${'postId'.$number}.' class="><img '.$srcStr. ' alt='.${'title'.$number}
+    $made1='<div class="row"><div class="col-md-4"><a href="post.php?id='.${'postId'.$number}.' class=""><img '.$srcStr. ' alt='.${'title'.$number}
     .' class="img-responsive"/></a></div><div class="col-md-8"><h2>'.${'title'.$number}.'</h2><div class="details">Posted by <a href="user.php?id='.${'userId'.$number}
     .  ' class="" >'.${'userName'.$number}.'</a><span class="pull-right"> '.${'date'.$number}.'</span><p class="ratings"> '.$golds.$whites
     .${'reviewsNum'.$number}.' Reviews</p></div><p class="excerpt"> '.${'excerpt'.$number}.'</p><p><a href='."post.php?id=".${'postId'.$number}.' class="btn btn-primary btn-sm" >'
