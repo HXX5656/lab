@@ -1,6 +1,5 @@
 <?php include 'functions.inc.php'; ?>
-<?php include 'header.inc.php'; ?>
-<?php include 'left.inc.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,13 +17,13 @@
 </head>
 
 <body>
-    <!-- include header here -->
+<?php include 'header.inc.php'; ?>
 
     <!-- Page Content -->
     <main class="container">
         <div class="row">
-    
-        <!-- include left here -->          
+
+            <?php include 'left.inc.php'; ?>
     
             <div class="col-md-10">
                 <div class="jumbotron" id="postJumbo">
